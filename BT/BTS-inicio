@@ -1,0 +1,40 @@
+#include <iostream>
+using namespace std;
+
+class node{
+    public:
+    int val;
+    node* left;
+    node* right;
+};
+class BST{
+    private:
+    node *root;
+    public:
+    BST(){
+        this->root=NULL;
+    }
+    void add(int x){
+                                             
+    }
+    node* add(int x,node* temp){
+        if(temp==NULL){
+            node* n=new node;
+            n->val=x;
+            n->left=NULL;
+            n->right=NULL;
+            return n;
+        }
+        if else(x<temp->val){
+            temp->left=add(x,temp->left);
+            return temp;
+        }else{
+            temp->right=add(x,temp->right);
+            return temp;
+        }
+    }
+};
+int main(){
+
+    return 0;
+}
